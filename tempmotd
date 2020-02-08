@@ -1,0 +1,10 @@
+# TempMOTD Config File
+# Via config.helpch.at
+#
+# By Funnycube
+DefaultMOTD: |-
+  &b&lMy Server&r &7|&r &dSomeRandomIp.com&r
+  &7Come join my server!
+TempMOTD: |-
+  &b&lMy Server&r &7|&r &dSomeRandomIp.com&r
+  %message%
