@@ -1,0 +1,29 @@
+# RankupHolograms version 3.0
+# Via config.helpch.at
+#
+# Configuration file
+#    
+# Valid placeholders:
+# %player% - players name
+# %displayname% - players displayname
+# %world% - players current world
+# %rank% - players current rank
+# %rankup% - players next rank (if they have one)
+# %cost% - cost to rankup
+# %cost_formatted% - formatted cost to rankup
+# %balance% - players balance
+# %balance_formatted% - players formatted balance
+# %difference% - amount still needed
+# %difference_formatted% - formatted amount still needede
+# %rankprefix% - players current rank prefix defined in this file
+# %rankupprefix% - players next rank prefix defined in this file
+# %lastrank% - last rank available
+# %lastrankprefix% - last rank available prefix
+rankup_hologram:
+  display_length: 5
+  display_height: 2
+  message:
+  - '&c%player%'
+  - '&b&lRanked up!'
+  - '&bto'
+  - '%rankupprefix%'
