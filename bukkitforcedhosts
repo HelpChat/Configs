@@ -1,0 +1,14 @@
+# Bukkit Forced Hosts v1.1.1
+# Via config.helpch.at
+#
+# Use - instead of . when specifying your hostnames
+# Hooks are optional, and currently authme is the only hook. Instead of the commands being ran on join, they'll be ran after successful login.
+# Supply a list of commands that shall be ran, %s will be replaced with the player's name upon execution.
+# Use /bfh reload to reload this file.
+# Do not manually change config-version
+config-version: 1
+example-com:
+  hooks:
+    - "authme"
+  commands:
+    - "tellraw %s {\"text\":\"Hello\"}"
