@@ -1,0 +1,155 @@
+# AutoSell version: 1.9.2 Main Configuration
+# Via config.helpch.at
+
+check_updates: true
+block_listener_priority: HIGHEST
+hooks:
+  mine_reset_lite:
+    enabled: true
+  worldguard:
+    enabled: false
+  prisonmines:
+    enabled: false
+  asylum_mines:
+    enabled: false
+  jets_prison_mines:
+    enabled: false
+tools_never_break: true
+ignore_custom_items: true
+multiplier_save_on_interval: true
+multiplier_save_interval: 300
+multiplier_default_limit: 100
+signsell:
+  per_shop_permissions: true
+  has_multiplier_message:
+  - '&8&m-----------------------------------------------------'
+  - '&bItems Sold&7: &f%items%'
+  - '&bAmount&7: &a$&f%amount%'
+  - '&bMultiplier: &f%multiplier%'
+  - '&8&m-----------------------------------------------------'
+  no_multiplier_message:
+  - '&8&m-----------------------------------------------------'
+  - '&bItems Sold&7: &f%items%'
+  - '&bAmount&7: &a$&f%amount%'
+  - '&8&m-----------------------------------------------------'
+sellall:
+  enabled: true
+  use_perm_shop_when_no_shop_is_at_location: true
+  has_multiplier_message:
+  - '&8&m-----------------------------------------------------'
+  - '&bItems Sold&7: &f%items%'
+  - '&bAmount&7: &a$&f%amount%'
+  - '&bMultiplier: &f%multiplier%'
+  - '&8&m-----------------------------------------------------'
+  no_multiplier_message:
+  - '&8&m-----------------------------------------------------'
+  - '&bItems Sold&7: &f%items%'
+  - '&bAmount&7: &a$&f%amount%'
+  - '&8&m-----------------------------------------------------'
+shop_items_info:
+  use_gui: true
+  message:
+  - '&8&m-----------------------------------------------------'
+  - '&aShop: &f%shop%'
+  - '%items%'
+  - '&8&m-----------------------------------------------------'
+  item_format: '&7%material%&f:&7%data% &f- &a$&f%price_1%'
+vkbackpack:
+  bptoggle_on_join: true
+shops:
+  Shop1:
+    priority: 1
+    shop_list:
+    - STONE,0.50
+    - COBBLESTONE,0.20
+    - IRON_ORE,0.35
+    - COAL_ORE,0.20
+money:
+  fix_money: true
+  use_custom_format: false
+  custom_format: '#,###.00'
+  thousands_format: k
+  millions_format: M
+  billions_format: B
+  trillions_format: T
+  quadrillions_format: Q
+autosell:
+  allow_creative: false
+  require_tools: true
+  take_sold_items: true
+  disabled_worlds:
+  - someworld
+  - someotherworld
+  multipliers_enabled: true
+  interval_announcements:
+    enabled: true
+    interval: 60
+    has_multiplier_message:
+    - '&8&m-----------------------------------------------------'
+    - '&eYour AutoSell stats...'
+    - '&bItems Sold&7: &f%items%'
+    - '&bAmount&7: &a$&f%amount%'
+    - '&bMultiplier: &f%multiplier%'
+    - '&8&m-----------------------------------------------------'
+    no_multiplier_message:
+    - '&8&m-----------------------------------------------------'
+    - '&eYour AutoSell stats...'
+    - '&bItems Sold&7: &f%items%'
+    - '&bAmount&7: &a$&f%amount%'
+    - '&8&m-----------------------------------------------------'
+item_drops:
+  drops2inv:
+    enabled: true
+    require_permission_node: false
+    autosell_areas_only: false
+    disabled_worlds:
+    - someworld
+    - someotherworld
+    ignored_blocks:
+    - SKULL_ITEM
+    - SKULL
+    allowed_instead_of_ignored: false
+  silk_touch:
+    enabled: true
+  fortune:
+    enabled: true
+    minimum_drops: 1
+    maximum_drops: 1000
+    multiplier: 1.2
+    modifier: 1
+    random_drop_amount: true
+    disabled_worlds:
+    - someworld
+    - someotherworld
+    fortune_blocks:
+    - DIAMOND_ORE
+    - EMERALD_ORE
+    - GOLD_ORE
+    - IRON_ORE
+    - LAPIS_ORE
+    - REDSTONE_ORE
+    - QUARTZ_ORE
+    - COAL_ORE
+    - DIAMOND_BLOCK
+    - EMERALD_BLOCK
+    - GOLD_BLOCK
+    - IRON_BLOCK
+    - LAPIS_BLOCK
+    - REDSTONE_BLOCK
+    - QUARTZ_BLOCK
+    - COAL_BLOCK
+  ingot_to_block:
+    enabled: true
+    toggle_on_join: true
+    auto_blocks_interval: 30
+  auto_smelt:
+    enabled: true
+    toggle_on_join: true
+    disabled_worlds:
+    - someworld
+    - someotherworld
+    smelt_list:
+    - GOLD_ORE,GOLD_INGOT
+    - IRON_ORE,IRON_INGOT
+    - WOOL;3,WOOL;5
+    - STONE,STONE
