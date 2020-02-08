@@ -1,0 +1,16 @@
+# ChatReactionPlus v1.5.0
+# Via config.helpch.at
+
+# rewards_based_on_wins: <true/false> - reward players based on the amount of wins they have
+# win_rewards:
+#   20:
+#   - [message] You get an extra reward for having over 20 wins!
+#   - [console] eco give %player_name% 100
+#   50:
+#   - [message] You get an extra reward for having over 50 wins!
+#   - [console] eco give %player_name% 500
+rewards_based_on_wins: false
+win_rewards:
+  '20':
+  - '[message] you get an extra reward for having over 20 wins!'
+  - '[console] eco give %player_name% 100'
